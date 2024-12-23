@@ -76,3 +76,7 @@ body {
 .pause {
     filter: invert(1);
 }
+
+#poster{
+    border-radius: 10px;
+}
