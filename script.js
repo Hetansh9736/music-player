@@ -69,16 +69,19 @@ function pre() {
 document.addEventListener("DOMContentLoaded", function () {
     let audio = document.querySelector(".audio")
     let progress = document.querySelector("#progress")
-    
+
     audio.onloadedmetadata = function () {
         progress.max = audio.duration
         progress.value = audio.currentTime
     }
-    
-    if(audio.play()){
+
+    if (audio.play()) {
         setInterval(() => {
             progress.value = audio.currentTime
         }, 500);
     }
-    
+
+    progress.onchange = function () {
+        audio.currentTime = progress.value
+    }
 })
