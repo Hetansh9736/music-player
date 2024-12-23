@@ -53,22 +53,26 @@ body {
     justify-content: center;
 }
 
-input {
+#progress {
     -webkit-appearance: none;
     width: 90%;
     height: 6px;
     margin-top: 40px;
     cursor: pointer;
-    border-radius: 5px;  
-    background-color: #cc9de8; 
-   
+    border-radius: 5px;
+    background-color: #cc9de8;
+
 }
-::-webkit-slider-thumb{
+
+::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 20px;
     height: 20px;
     background: #ab68d4;
     border-radius: 50%;
     cursor: pointer;
-    transition: background 0.3s;
+}
+
+.pause{
+   filter:invert(1);
 }
