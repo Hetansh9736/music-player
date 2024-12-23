@@ -21,17 +21,15 @@ let resume = document.querySelector(".pause")
 
 
 let list = [
-    { song1: "victory Anthem", address: "music/Music-01.m4a", img: "Images/victory.jpg" },
-    { song1: "millioner", address: "music/milioner.mp3", img: "Images/milioner.jpg" },
-    { song1: "victory Anthem", address: "music/childhood.mp3", img: "Images/victory.jpg" },
-    { song1: "victory Anthem", address: "music/skyfall.mp3", img: "Images/victory.jpg" },
+    { song: "victory Anthem", address: "music/Music-01.m4a", img: "Images/victory.jpg" },
+    { song: "millioner", address: "music/milioner.mp3", img: "Images/milioner.jpg" },
+    { song: "victory Anthem", address: "music/childhood.mp3", img: "Images/victory.jpg" },
+    { song: "victory Anthem", address: "music/skyfall.mp3", img: "Images/victory.jpg" },
 ]
 
 let i = 0;
 
 function next() {
-    let next = document.querySelector(".next")
-
     let audio = document.querySelector(".audio")
     audio.pause()
     console.log(document.getElementById("pp-img").src = "Images/Resume.png")
@@ -44,7 +42,7 @@ function next() {
     console.log(audio.src = list[i].address)
 
     audio.src = list[i].address
-
+    audio.play();
 
 
 }
@@ -56,7 +54,7 @@ function pre() {
     console.log(document.getElementById("pp-img").src = "Images/Resume.png")
 
     if (i == 0) {
-        i = list.length
+        i = list.length - 1
     } else {
         i--
     }
@@ -64,7 +62,7 @@ function pre() {
     console.log(audio.src = list[i].address)
 
     audio.src = list[i].address
-
+    audio.play();
 
 
 }
