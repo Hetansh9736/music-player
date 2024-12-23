@@ -73,6 +73,6 @@ body {
     cursor: pointer;
 }
 
-.pause{
-   filter:invert(1);
+.pause {
+    filter: invert(1);
 }
