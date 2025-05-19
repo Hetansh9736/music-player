@@ -18,10 +18,10 @@ let resume = document.querySelector(".pause")
 
 let list = [
     { song: "Victory Anthem", address: "music/Music-01.m4a", img: "Images/victory.jpg" },
-    { song: "Millioner", address: "music/milioner.mp3", img: "Images/milioner.jpg" },
+    { song: "millionaire", address: "music/millionaire.mp3", img: "Images/millionaire.jpg" },
     { song: "Childhood", address: "music/childhood.mp3", img: "Images/childhood.jpeg" },
-    { song: "SkyFall", address: "music/skyfall.mp3", img: "Images/skyfall.jpg" },
-    { song: "Gangster", address: "music/gangster.mp3", img: "Images/GP.jpeg" }
+    { song: "Skyfall", address: "music/skyfall.mp3", img: "Images/skyfall.jpg" },
+    { song: "gangsters", address: "music/gangster.mp3", img: "Images/GP.jpeg" }
 ]
 
 let i = 0;
